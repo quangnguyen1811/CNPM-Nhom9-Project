@@ -1,0 +1,176 @@
+/* Reset CSS */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Helvetica,Arial, sans-serif;
+}
+/* 
+1.Từ ngoài vào trong
+2.Từ trên xuống dưới
+3.Tổng quan đến chi tiết
+*/
+
+
+/* 
+1. Vị trí
+2. Kích thước(width.height)
+3. Màu sắc
+4. Kiểu dáng(kiểu chữ,hình tròn,vuông,..)
+ */
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    height:46.5px;
+    background-color: #000;
+    z-index: 1;
+    /* De header noi len */
+}
+
+#nav{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{   
+    position: relative;
+}
+
+#nav > li > a{
+    color:#fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: block;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color:#000;
+    background-color: #ccc;
+}
+/* Chi anh huong den a cap 1 (Home,Band,Tour,..) */
+
+
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    /* top:100%;
+    left:0; */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3) ;
+}
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down{
+    font-size: 10px;
+}
+#header .search-btn{
+    float:right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover{
+    cursor: pointer;
+    background-color: #f44336;
+}   
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46.5px;
+
+}
+#slider {
+    position: relative;
+    margin-top: 46.5px;
+    padding-top: 50%;
+    /* %0% chieu ngang cua chinh no */
+    background: url('/assets/img/Slider/Slider1.jpg') top center /cover no-repeat;
+    /* Thu tu de viet short hand: Url/Background position/Background size  background repeat */
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom:47px;
+    color: #fff;
+    /* Cac cach de can giua */
+    /* Cach 1: */
+        /* left:50%;
+        transform: translateX(-50%); */
+    /* Cach 2: */
+        /* width:100% ; */
+    /* Cach 3: */
+        right:0;
+        left:0;
+    text-align: center;
+}
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+}
+
+#content {
+
+}
+
+#content .content-section{
+    padding: 64px 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style:italic;
+    opacity: 0.6;
+}
+#content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#footer {
+
+}
