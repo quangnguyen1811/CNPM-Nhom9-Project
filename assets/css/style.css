@@ -20,6 +20,11 @@ html{
 3. Màu sắc
 4. Kiểu dáng(kiểu chữ,hình tròn,vuông,..)
  */
+.clear{
+    clear: both ;
+     /* Vi dung float nen phai dung clear */
+}
+
 #main {
 
 }
@@ -29,9 +34,10 @@ html{
     top:0;
     right:0;
     left:0;
-    height:46.5px;
-    background-color: #000;
-    z-index: 1;
+    height:70px;
+    background-color: #2fa1b3;
+    z-index: 1; 
+    font-size: 20px;
     /* De header noi len */
 }
 
@@ -56,7 +62,7 @@ html{
 
 #nav li a{
     text-decoration: none;
-    line-height: 46.5px;
+    line-height: 69.5px;
     padding: 0 24px;
     display: block;
 }
@@ -68,12 +74,11 @@ html{
     color:#000;
     background-color: #ccc;
 }
-/* Chi anh huong den a cap 1 (Home,Band,Tour,..) */
 
 
 #nav .subnav{
     display: none;
-    min-width: 160px;
+    min-width: 100%;
     position: absolute;
     /* top:100%;
     left:0; */
@@ -87,10 +92,10 @@ html{
 }
 
 #nav .nav-arrow-down{
-    font-size: 10px;
+    font-size: 20px;
 }
 #header .search-btn{
-    float:right;
+    float:right; 
     padding: 0 21px;
 }
 
@@ -100,16 +105,17 @@ html{
 }   
 #header .search-icon{
     color: #fff;
-    font-size: 20px;
-    line-height: 46.5px;
+    font-size: 25px;
+    line-height: 70.5px;
+    box-sizing: inherit;
 
 }
 #slider {
     position: relative;
     margin-top: 46.5px;
-    padding-top: 50%;
+    padding-top: 46.5%;
     /* %0% chieu ngang cua chinh no */
-    background: url('/assets/img/Slider/Slider1.jpg') top center /cover no-repeat;
+    background: url('/assets/img/Slider/Covid/Slider1.jpg') top center /cover no-repeat;
     /* Thu tu de viet short hand: Url/Background position/Background size  background repeat */
 }
 
@@ -124,30 +130,47 @@ html{
     /* Cach 2: */
         /* width:100% ; */
     /* Cach 3: */
-        right:0;
-        left:0;
-    text-align: center;
+        /* right:0;
+        left:0; */
+    text-align:left;
 }
 #slider .text-heading{
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 22px;
     margin-bottom: 25px;
+    padding-bottom: 160px;
+    padding-left: 50px;
+    text-align: center;
 }
 
 #slider .text-description{
-    font-size: 15px;
+    font-size: 23px;
 }
 
 #content {
 
 }
-
-#content .content-section{
-    padding: 64px 0;
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+/* #content .content-section{
+    height:70px;
+    width: 100px;
+    background-color: #2fa1b3;
+    font-size: 20px;
+    De header noi len */
+/* } */
+.content-local-news{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 40px 0; 
+    color: #fff;
 }
+ #content .content-section{
+    padding: 30px 0; 
+    width: 1200px;
+    margin-left: auto;
+    margin-right:  auto;
+ } 
 
 
 #content .section-heading{
@@ -164,13 +187,98 @@ html{
     font-style:italic;
     opacity: 0.6;
 }
-#content .about-text{
+/* #content .about-text{
     margin-top: 25px;
     font-size: 15px;
     text-align: justify;
     line-height: 1.5;
+} */
+.content-local-news{
+    background-color: #2fa1b3;
+}
+#content .covid-news-list{
+    margin-top: 48px;
+    /* overflow: hidden; */
+    /* Vi dung float nen phai dung over-flow  */
+    text-decoration: none;
 }
 
+
+#content .covid-new{
+    float: left;
+    width: calc(100%/3);
+    /* width: 33,3333333%; */
+    text-align: center;
+    font-size: 30px;
+
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style:italic;
+    opacity: 0.6;
+}
+#content .covid-new-title{
+    font-size: 20px;
+}
+#content .covid-new-img{
+    width: 323px;
+    border-radius: 25px;
+}
+#content .covid-news-day{
+    padding-top: 30px;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    font-weight: 300;
+}
+.ticket-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+    /* xoa dau cham dau dong  */
+}
+/* Tour section */
+.VNE-section{
+    /* background-color: #000; */
+}
+
+.ticket-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+    /* xoa dau cham dau dong  */
+}
+
+.ticket-list li{
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border: 1px solid #ddd;
+}
+
+.ticket-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px ;
+    margin-left: 16px;
+}
+
+.ticket-list .quantity{
+    background-color:#000;
+    color: #fff;
+    float: right;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-top:-3px;
+    /* Co float moi dung dc gia tri margin la so am */
+}
+
+/* Footer section */
 #footer {
 
 }
