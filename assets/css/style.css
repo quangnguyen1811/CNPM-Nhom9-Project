@@ -1,104 +1,254 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Covid News</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/Fonts/themify-icons/themify-icons.css">
-</head>
-<body>
-    <div id="main">
-        <div id="header">
-            <!-- Begin nav -->
-            <ul id="nav">
-                <li><a href="">Trang chủ</a></li>
-                <!-- <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li> -->
-                <li><a href="">Liên hệ</a></li>
-                <li>
-                    <a href="">
-                        Báo trong nước 
-                        <i class="nav-arrow-down ti-angle-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="">Dân Trí</a></li>
-                        <li><a href="">VnExpress</a></li>
-                        <li><a href="">VietNamNet</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">
-                   Báo quốc tế 
-                      <i class="nav-arrow-down ti-angle-down"></i>
-                   </a>
-                   <ul class="subnav">
-                       <li><a href="">BBC</a></li>
-                       <li><a href="">Google News</a></li>
-                   </ul>
-              </li>
-        <!-- End: Nav -->
-        <!-- Begin: Search button -->
-        <div class="search-btn">
-             <!-- <input class="form-control input-lg" id="searchTerm" name="searchTerm" placeholder="Search" type="text" value=""> -->
-            <div class="search-icon ti-search"></div>
-          
-        </div>
-         <!-- End: Search button  -->
-        </div>
+/* Reset CSS */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Helvetica,Arial, sans-serif;
+}
+/* 
+1.Từ ngoài vào trong
+2.Từ trên xuống dưới
+3.Tổng quan đến chi tiết
+*/
 
-        <div id="slider">
-            <div class="text-content">
-                <h2 class="text-heading">PHÓ THỦ TƯỚNG NGUYỄN ĐỨC ĐAM</h2s>
-                <div class="text-description">"CHỐNG DỊCH LÀ MỤC TIÊU HÀNG ĐẦU CỦA ĐẤT NƯỚC"
 
-                </div>
-            </div>
-        </div>
-        <div id="content">
-            <!-- About Section -->
-            <div class="content-local-news">BÁO TRONG NƯỚC</div>
-                <div class="content-section">
-                    <h2 class="section-heading"><img loading="lazy" width="160" height="39" alt="Báo điện tử Dân trí - Tin tức cập nhật liên tục 24/7" src="https://cdnweb.dantri.com.vn/dist/static-logo.1-0-1.329fb29fe0ea34cca545.svg"></h2>
-                    <p class="section-sub-heading">Dân Trí là một tờ báo điện tử trực thuộc Bộ Lao động - Thương binh và Xã hội.</p>
+/* 
+1. Vị trí
+2. Kích thước(width.height)
+3. Màu sắc
+4. Kiểu dáng(kiểu chữ,hình tròn,vuông,..)
+ */
+.clear{
+    clear: both ;
+     /* Vi dung float nen phai dung clear */
+}
 
-                    </p>
-                    <div class="covid-news-list">
-                        <div class="covid-new">
-                            <img href="https://dantri.com.vn/suc-khoe/tphcm-da-can-vaccine-covid-19-20220929194120809.htm"src="./assets/img/Content/30-9/New1/tiemvaccinehoang-le-1640488483390-1664455085520.webp" alt="Picture" class="covid-new-img">
-                            <a href="https://dantri.com.vn/suc-khoe/tphcm-da-can-vaccine-covid-19-20220929194120809.htm"class="covid-new-title">TPHCM đã cạn vaccine Covid-19</a    >
-                        </div>
-                        <div class="covid-new">
-                            <img href="https://dantri.com.vn/suc-khoe/tphcm-da-can-vaccine-covid-19-20220929194120809.htm" src="./assets/img/Content/30-9/New2/tiemvaccinehoang-le-1640488483390-1664455085520.webp" alt="Picture" class="covid-new-img">
-                            <a href="https://dantri.com.vn/suc-khoe/dich-covid-19-mien-dich-cong-dong-dang-giam-20220924203136620.htm" class="covid-new-title">Dịch Covid-19: Miễn dịch cộng đồng đang giảm</a>
-                        </div>
-                        <div class="covid-new">
-                            <img href="https://dantri.com.vn/suc-khoe/tphcm-da-can-vaccine-covid-19-20220929194120809.htm" src="./assets/img/Content/30-9/New3/thumb-1663551086793.webp" alt="Picture" class="covid-new-img">
-                            <a href="https://dantri.com.vn/suc-khoe/xoa-so-dich-covid-19-phep-thu-khi-mua-dong-dang-den-gan-20220919090814293.htm" class="covid-new-title">Xóa sổ dịch Covid-19: Phép thử khi mùa đông đang đến gần</a>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="covid-news-day">Ngày 30/9</div>
-                    </div>  
-                </div>
-            <!-- Tour Section -->
-            <div class="VNE-section">
-                <!-- Tao the div cha cho the content-section su dung ca chieu ngang -->
-                <div class="content-section ">
-                    <h2 class="section-heading "><img loading="lazy" width="160" height="50" img src="https://s1.vnecdn.net/vnexpress/restruct/i/v654/v2_2019/pc/graphics/logo.svg" alt="VnExpress - Bao tieng Viet nhieu nguoi xem nhat"></h2>
-                    <p class="section-sub-heading ">Báo tiếng Việt nhiều người xem nhất thuộc Bộ Khoa học Công nghệ</p>            
-                    
+#main {
 
-            <!-- Contact Section -->
-            <div class="content-section">
-                <h2 class="section-heading">Liên hệ</h2>
-                <p class="section-sub-heading">Phong </p>
-                
-            </div>
-        </div> 
-        <div id="footer">
-            
-        </div>
-    </div>
-</body>
-</html>
+}
+
+#header {
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    height:70px;
+    background-color: #2fa1b3;
+    z-index: 1; 
+    font-size: 20px;
+    /* De header noi len */
+}
+
+#nav{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{   
+    position: relative;
+}
+
+#nav > li > a{
+    color:#fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 69.5px;
+    padding: 0 24px;
+    display: block;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color:#000;
+    background-color: #ccc;
+}
+
+
+#nav .subnav{
+    display: none;
+    min-width: 100%;
+    position: absolute;
+    /* top:100%;
+    left:0; */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3) ;
+}
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down{
+    font-size: 20px;
+}
+#header .search-btn{
+    float:right; 
+    padding: 0 21px;
+}
+
+#header .search-btn:hover{
+    cursor: pointer;
+    background-color: #f44336;
+}   
+#header .search-icon{
+    color: #fff;
+    font-size: 25px;
+    line-height: 70.5px;
+    box-sizing: inherit;
+
+}
+#slider {
+    position: relative;
+    margin-top: 46.5px;
+    padding-top: 46.5%;
+    /* %0% chieu ngang cua chinh no */
+    background: url('/assets/img/Slider/Covid/Slider1.jpg') top center /cover no-repeat;
+    /* Thu tu de viet short hand: Url/Background position/Background size  background repeat */
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom:47px;
+    color: #fff;
+    /* Cac cach de can giua */
+    /* Cach 1: */
+        /* left:50%;
+        transform: translateX(-50%); */
+    /* Cach 2: */
+        /* width:100% ; */
+    /* Cach 3: */
+        /* right:0;
+        left:0; */
+    text-align:left;
+}
+#slider .text-heading{
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 25px;
+    padding-bottom: 160px;
+    padding-left: 50px;
+    text-align: center;
+}
+
+#slider .text-description{
+    font-size: 23px;
+}
+.Search-taskbar{
+    display:inline-block;
+}
+#content {
+
+}
+/* #content .content-section{
+    height:70px;
+    width: 100px;
+    background-color: #2fa1b3;
+    font-size: 20px;
+    De header noi len */
+/* } */
+.content-local-news{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 40px 0; 
+    color: #fff;
+}
+ #content .content-section{
+    padding: 30px 0; 
+    width: 1200px;
+    margin-left: auto;
+    margin-right:  auto;
+ } 
+
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style:italic;
+    opacity: 0.6;
+}
+/* #content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+} */
+.content-local-news{
+    background-color: #2fa1b3;
+}
+#content .covid-news-list{
+    margin-top: 48px;
+    /* overflow: hidden; */
+    /* Vi dung float nen phai dung over-flow  */
+    
+}
+
+
+#content .covid-new{
+    float: left;
+    width: calc(100%/3);
+    /* width: 33,3333333%; */
+    text-align: center;
+    font-size: 30px;
+
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style:italic;
+    opacity: 0.6;
+}
+#content .covid-new-title{
+    font-size: 20px;
+    text-decoration: none;
+}
+#content .covid-new-img{
+    width: 380px;
+    border-radius: 25px;
+}
+#content .covid-news-day{
+    padding-top: 30px;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    font-weight: 300;
+}
+.ticket-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+    /* xoa dau cham dau dong  */
+}
+/* Tour section */
+.VNE-section{
+    /* background-color: #000; */
+}
+
+
+/* Footer section */
+#footer {
+
+}
