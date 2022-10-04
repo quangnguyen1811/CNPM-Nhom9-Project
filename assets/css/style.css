@@ -146,7 +146,9 @@ html{
 #slider .text-description{
     font-size: 23px;
 }
-
+.Search-taskbar{
+    display:inline-block;
+}
 #content {
 
 }
@@ -200,7 +202,7 @@ html{
     margin-top: 48px;
     /* overflow: hidden; */
     /* Vi dung float nen phai dung over-flow  */
-    text-decoration: none;
+    
 }
 
 
@@ -221,9 +223,10 @@ html{
 }
 #content .covid-new-title{
     font-size: 20px;
+    text-decoration: none;
 }
 #content .covid-new-img{
-    width: 323px;
+    width: 380px;
     border-radius: 25px;
 }
 #content .covid-news-day{
